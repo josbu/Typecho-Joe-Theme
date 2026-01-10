@@ -22,7 +22,7 @@
  -->
 
 <!DOCTYPE html>
-<html lang="zh-CN" data-color-mode="<?php if($_COOKIE['night']=='1')echo 'dark';else echo 'light'; ?>">
+<html lang="zh-CN" data-color-mode="<?php echo isset($_COOKIE['night']) && $_COOKIE['night'] == '1' ? 'dark' : 'light'; ?>">
 
 <head>
     <?php $this->need('public/head.php'); ?>
